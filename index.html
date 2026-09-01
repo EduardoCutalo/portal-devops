@@ -10,7 +10,6 @@
  <header class="topo">
  <h1>Portal Acadêmico DevOps</h1>
  <p>Ambiente de serviços acadêmicos e colaboração.</p>
- <button id="botaoDestaque">Ver serviços</button>
  </header>
 
  <main>
@@ -32,18 +31,25 @@
  </div>
  </section>
 
- <section class="secao">
- <h2>Contato</h2>
- <form id="formContato">
- <label for="nome">Nome</label>
- <input id="nome" type="text" placeholder="Digite seu nome">
- <label for="mensagem">Mensagem</label>
- <textarea id="mensagem" placeholder="Digite sua solicitação"></textarea>
- <button type="submit">Enviar</button>
- </form>
- <p id="resposta"></p>
- </section>
- </main>
- <script src="script.js"></script>
+<section class="secao">
+<h2>Contato</h2>
+<form id="formContato">
+<label for="nome">Nome</label>
+<input id="nome" type="text" placeholder="Digite seu nome">
+
+<label for="sobrenome">Sobrenome</label>
+<input id="sobrenome" type="text" placeholder="Digite seu sobrenome">
+
+<label for="matricula">Matrícula</label>
+<input id="matricula" type="text" placeholder="Digite sua matrícula">
+
+<label for="mensagem">Mensagem</label>
+<textarea id="mensagem" placeholder="Digite sua solicitação"></textarea>
+
+<button type="submit">Enviar</button>
+</form>
+<p id="resposta"></p>
+</section>
+</main>
 </body>
 </html>
