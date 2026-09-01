@@ -80,10 +80,6 @@ input, textarea {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* ===================================
-   GRUPO DE BOTÕES DE CONTATO E ANEXO
-   =================================== */
-
 .grupo-botoes-contato {
   display: flex;
   gap: 12px;
