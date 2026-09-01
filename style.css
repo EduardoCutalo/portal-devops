@@ -53,3 +53,40 @@ form button {
  border-radius: 8px; }
 @media (max-width: 700px) {
  .cards { grid-template-columns: 1fr; } }
+
+
+/* ======================
+        MODO NOTURNO 
+   ====================== */
+
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .topo {
+  background: #002d42; 
+}
+
+body.dark-mode .topo button {
+  background: #b30062;
+
+body.dark-mode .secao {
+  background: #1e1e1e;
+}
+
+body.dark-mode .card {
+  background: #2c2c2c;
+  border-color: #444;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+  background: #2c2c2c;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body.dark-mode form button {
+  background: #002d42;
+}
