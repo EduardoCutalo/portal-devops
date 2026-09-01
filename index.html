@@ -10,6 +10,10 @@
  <header class="topo">
  <h1>Portal Acadêmico DevOps</h1>
  <p>Ambiente de serviços acadêmicos e colaboração.</p>
+ <div class="botoes-topo">
+ <button id="botaoDestaque">Ver serviços</button>
+ <button id="botaoTema">Modo Escuro</button>
+ </div>
  </header>
 
  <main>
@@ -43,10 +47,17 @@
 <label for="matricula">Matrícula</label>
 <input id="matricula" type="text" placeholder="Digite sua matrícula">
 
+<label for="email">E-mail</label>
+<input id="email" type="email" placeholder="Digite seu e-mail">
+
 <label for="mensagem">Mensagem</label>
 <textarea id="mensagem" placeholder="Digite sua solicitação"></textarea>
 
+<div class="grupo-botoes-contato">
+<input type="file" id="arquivoAnexo" style="display: none;">
+<button type="button" id="botaoAnexar" onclick="document.getElementById('arquivoAnexo').click()">Anexar Documentos</button>
 <button type="submit">Enviar</button>
+</div>
 </form>
 <p id="resposta"></p>
 </section>
