@@ -1,63 +1,142 @@
 * {
- box-sizing: border-box; }
-body {
- margin: 0;
- font-family: Arial, sans-serif;
- background: #f4f5f7;
- color: #1d1d1f; }
-.topo {
- background: #00537a;
- color: white;
- padding: 40px 24px;
- text-align: center; }
-.topo button {
- background: #e6007e;
- color: white;
- border: none;
- padding: 12px 18px;
- border-radius: 8px;
- cursor: pointer; }
+  box-sizing: border-box; 
+}
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f5f7;
+  color: #1d1d1f; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topo {
+  background: #00537a;
+  color: white;
+  padding: 40px 24px;
+  text-align: center; 
+  transition: background-color 0.3s ease;
+}
+
+.topo button {
+  background: #e6007e;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+
+
+.botoes-topo {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
 
 .secao {
- width: min(1000px, 92%);
- margin: 32px auto;
- background: white;
- padding: 24px;
- border-radius: 12px; }
-.cards {
- display: grid;
- grid-template-columns: repeat(3, 1fr);
- gap: 16px; }
-.card {
- border: 1px solid #ddd;
- padding: 18px;
- border-radius: 10px;
- background: #ffffff; }
+  width: min(1000px, 92%);
+  margin: 32px auto;
+  background: white;
+  padding: 24px;
+  border-radius: 12px; 
+  transition: background-color 0.3s ease;
+}
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px; 
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 18px;
+  border-radius: 10px;
+  background: #ffffff; 
+  /* Efeito de hover e transição de cores */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 
 form {
- display: grid;
- gap: 10px; }
+  display: grid;
+  gap: 10px; 
+}
+
 input, textarea {
- width: 100%;
- padding: 10px;
- border: 1px solid #ccc;
- border-radius: 8px; }
-form button {
- width: fit-content;
- padding: 10px 16px;
- background: #00537a;
- color: white;
- border: none;
- border-radius: 8px; }
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px; 
+  font-family: inherit;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ===================================
+   GRUPO DE BOTÕES DE CONTATO E ANEXO
+   =================================== */
+
+.grupo-botoes-contato {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+#botaoAnexar {
+  background: transparent;
+  color: #00537a;
+  border: 2px solid #00537a; 
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease; 
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#botaoAnexar::before {
+  content: '📎';
+  font-size: 16px;
+}
+
+#botaoAnexar:hover {
+  background: #e6f2f8; 
+}
+
+.grupo-botoes-contato button[type="submit"] {
+  background: #00537a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.grupo-botoes-contato button[type="submit"]:hover {
+  background: #003d5a;
+}
+
 @media (max-width: 700px) {
- .cards { grid-template-columns: 1fr; } }
+  .cards { grid-template-columns: 1fr; } 
+}
 
-
-/* ======================
-        MODO NOTURNO 
-   ====================== */
+/* ============
+   MODO NOTURNO
+   ============ */
 
 body.dark-mode {
   background: #121212;
@@ -70,6 +149,7 @@ body.dark-mode .topo {
 
 body.dark-mode .topo button {
   background: #b30062;
+} 
 
 body.dark-mode .secao {
   background: #1e1e1e;
@@ -80,6 +160,10 @@ body.dark-mode .card {
   border-color: #444;
 }
 
+body.dark-mode .card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
 body.dark-mode input, 
 body.dark-mode textarea {
   background: #2c2c2c;
@@ -87,6 +171,19 @@ body.dark-mode textarea {
   border-color: #444;
 }
 
-body.dark-mode form button {
+body.dark-mode #botaoAnexar {
+  color: #66b2ff; 
+  border-color: #66b2ff;
+}
+
+body.dark-mode #botaoAnexar:hover {
+  background: rgba(102, 178, 255, 0.1); 
+}
+
+body.dark-mode .grupo-botoes-contato button[type="submit"] {
   background: #002d42;
+}
+
+body.dark-mode .grupo-botoes-contato button[type="submit"]:hover {
+  background: #004060;
 }
