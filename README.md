@@ -10,7 +10,7 @@ Evoluir um portal web acadêmico existente por meio de trabalho colaborativo em 
 ---
 
 ## 🔗 Links Úteis
-* **Página Publicada (GitHub Pages):** [https://eduardocutalo.github.io/portal-devops/](https://eduardocutalo.github.io/portal-devops/) *(Substitua com a URL final do grupo)*
+* **Página Publicada (GitHub Pages):** [https://eduardocutalo.github.io/portal-devops/](https://eduardocutalo.github.io/portal-devops/) 
 * **Repositório do Projeto:** [https://github.com/EduardoCutalo/portal-devops](https://github.com/EduardoCutalo/portal-devops)
 
 ---
