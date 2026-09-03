@@ -19,11 +19,11 @@ Evoluir um portal web acadêmico existente por meio de trabalho colaborativo em 
 
 | Integrante | Papel no Projeto | Responsabilidades Principais |
 | :--- | :--- | :--- |
-| **Eduardo Cutalo**| Líder / Integrador | Gestão do repositório, aprovação de PRs, *merges* na `main` e publicação no GitHub Pages. |
-| **Maria Eduarda** | Dev. Estrutura (HTML) | Reorganização das seções, campos de formulário, footer e tags semânticas. |
-| **João Pedro Martinho** | Dev. Interface (CSS) | Estilização, responsividade, modo escuro, novos componentes e botões. |
-| **Abner** | Dev. Funcionalidades (JS) | Integração do FullCalendar, validação de formulários, notificações Toast e alternância de temas. |
-| **Beatriz Azevedo** | Revisor / Documentador | Revisão cruzada de Pull Requests, abertura de Issues e redação do README.md. |
+| **Eduardo Cutalo Moreira Borges**| Líder / Integrador | Gestão do repositório, aprovação de PRs, *merges* na `main` e publicação no GitHub Pages. |
+| **Maria Eduarda Caetana da Silva** | Dev. Estrutura (HTML) | Reorganização das seções, campos de formulário, footer e tags semânticas. |
+| **João Pedro Sousa Martinho** | Dev. Interface (CSS) | Estilização, responsividade, modo escuro, novos componentes e botões. |
+| **Abner Gustavo Ribeiro Brito** | Dev. Funcionalidades (JS) | Integração do FullCalendar, validação de formulários, notificações Toast e alternância de temas. |
+| **Beatriz Barros de Azevedo** | Revisor / Documentador | Revisão cruzada de Pull Requests, abertura de Issues e redação do README.md. |
 
 ---
 
